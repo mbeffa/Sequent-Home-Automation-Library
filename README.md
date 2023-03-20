@@ -1,5 +1,5 @@
 # Sequent-Home-Automation-Library
-Easy to use Arduino library for Sequent Microsystems [Home Automation 8-Layer Stackable HAT for Raspberry Pi](https://sequentmicrosystems.com/products/raspberry-pi-home-automation-card)
+Arduino library for Sequent Microsystems [Home Automation 8-Layer Stackable HAT for Raspberry Pi](https://sequentmicrosystems.com/products/raspberry-pi-home-automation-card)
 
 ## Install
 To download click <>Code > Download ZIP button, rename the uncompressed folder to "SM_Home_Automation" 
@@ -8,10 +8,10 @@ and copy to the libraries subdirectory of your sketchbook directory ("This PC > 
  The library will be compiled with sketches that use it. Open an arduino sketch, go to File > Examples > Sequent Home Automation HAT > and chose your example to run.
 
 ## Usage
-This library can be used with any Arduino card that has an I2C port but you need to wire them up, or with some Sequent Microsystems adapter cards.
+There are three ways to control the Home Automation Card from the Arduino environment.
 
-### Method 1:
-Connect I2C SDA, I2C SCL, 5V, and GND from Arduino card to Home automation hat, pin map below:
+### Method 1: No aditional hardware required.
+You can use this method with any Arduino card with an I2C port by connecting the I2C signals, power and ground, as shown in the following table.
       
 | SIGNAL | PIN# |CONN| PIN# | SIGNAL|
 |---|---|---|---|---|
@@ -36,9 +36,9 @@ Connect I2C SDA, I2C SCL, 5V, and GND from Arduino card to Home automation hat, 
 ||--37|O - O|38--||
 |GND |--39|O - O|40--||
  
-### Method 2:
-Use Sequent Microsystems [Uno/Nano/Teensy/Feather/ESP32 Raspberry Pi Replacement Kit](https://sequentmicrosystems.com/collections/accessories/products/raspberry-pi-replacement-card) with the preferred arduino processor then plug The Home Automation Card into the 40 pin header.
- 
-### Method 3:
-Use Sequent Microsystems [ESP32 Pi Replacement Card](https://sequentmicrosystems.com) connected directly with the Home Automation card.
+### Method 2: Using the SM Arduino Raspberry Pi Replacement Kit
+Sequent Microsystems [Arduino Uno, Nano, Teensy, Feather or ESP32 Raspberry Pi Replacement Kit](https://sequentmicrosystems.com/products/raspberry-pi-replacement-card) is an inexpensive adapter which can be used to control any of our HATs with five Arduino cards: Uno, Nano, Teensy, Feather or ESP32. Simply plug the Home Automation HAT into the 40 pin connector of the adapter and run your Arduino software.
+
+### Method 3: Using the SM ESP32-Pi Raspberry Pi Alternative
+Coming soon: ESP32-Pi, a Raspberry Pi alternate solution which could connect directly to the Home Automation HAT.
 In your sketchbook set the board type to DOIT ESP32 DEVKIT V1: Tool >> Board >> ESP32 Arduino >> DOIT ESP32 DEVKIT V1
