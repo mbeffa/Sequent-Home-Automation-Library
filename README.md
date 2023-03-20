@@ -2,7 +2,7 @@
 Easy to use Arduino library for Sequent Microsystems [Home Automation 8-Layer Stackable HAT for Raspberry Pi](https://sequentmicrosystems.com/products/raspberry-pi-home-automation-card)
 
 ## Install
-To download click the DOWNLOAD ZIP button, rename the uncompressed folder to "SM_Home_Automation" 
+To download click <>Code > DOWNLOAD ZIP button, rename the uncompressed folder to "SM_Home_Automation" 
 and copy to the libraries subdirectory of your sketchbook directory ("This PC > Documents > Arduino > libraries" for a Windows PC
  or "Home > arduino > libraries" on Linux PC). Now launch the Arduino environment. If you open the Sketch > Include Library menu, you should see Sequent Home Automation HAT inside. 
  The library will be compiled with sketches that use it. Open a arduino sketch, fo to File > Examples > Sequent Home Automation HAT > and chose your example to run.
